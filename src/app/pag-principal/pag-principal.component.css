@@ -1,0 +1,55 @@
+/*temas de angular material*/
+
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+#barra {
+    width: 100%;
+    height: 70px;
+    background: #BBD2C5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #536976, #ffffff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #d4e1e9, #ffffff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body {
+    background-image: url(../../assets/istlVilca.PNG);
+    background-repeat: no-repeat;
+}
+
+.example-form {
+    background-color: white;
+    margin: 3px;
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 100%;
+    font-weight: 700;
+    font-size: 30;
+}
+
+.example-card {
+    opacity: 80%;
+    position: relative;
+    margin-left: 33%;
+    max-width: 400px;
+}
+
+#barraInferior {
+    margin-top: 18%;
+    background: #0575E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#btnIngresar {
+    background-color: grey;
+    margin-left: 35%;
+    font-weight: 700;
+}
