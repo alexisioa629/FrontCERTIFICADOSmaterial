@@ -1,32 +1,32 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PagPrincipalComponent } from './pag-principal/pag-principal.component';
-//importacion de animaciones de material
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-//importar componentes que necesite
-import {MatButtonModule} from '@angular/material/button';// importar un boton
-import {MatToolbarModule} from '@angular/material/toolbar';// importar una toolBar
-import {MatIconModule} from '@angular/material/icon';// importar iconos
-import {MatInputModule} from '@angular/material/input';
-import {MatCardModule} from '@angular/material/card';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { CertificadoComponent } from './certificado/certificado.component';
+import { BuscarCertificadoComponent } from './buscar-certificado/buscar-certificado.component';
+//imporar modulo de servicios
+import { HttpClientModule } from '@angular/common/http';
+//
+import { CommonModule } from '@angular/common';
+import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
-    PagPrincipalComponent
+    CertificadoComponent,
+    BuscarCertificadoComponent,
+    LoginComponent
     
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, 
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatInputModule,
-    MatCardModule
+    FormsModule,
+    HttpClientModule,
+    CommonModule,
+    ReactiveFormsModule  
+    
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

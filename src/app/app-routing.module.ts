@@ -1,14 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PagPrincipalComponent } from './pag-principal/pag-principal.component';
-
+import{OpcionesComponent} from './opciones/opciones.component';
+import { LoginComponent } from './login/login.component';
+import { CertificadoComponent } from './certificado/certificado.component';
+import { BuscarCertificadoComponent } from './buscar-certificado/buscar-certificado.component';
 
 const routes: Routes = [
-  {path:"",redirectTo:"PAGINAPRINCIPAL",pathMatch:"full"},
-  {path:"PAGINAPRINCIPAL",component:PagPrincipalComponent}
+  { path: "buscarcertificado", component: BuscarCertificadoComponent},
+  { path: "certificado", component: CertificadoComponent },
+  { path: "opciones", component: OpcionesComponent },
+  { path: "login", component: LoginComponent },
+  { path: "", redirectTo: "login", pathMatch: "full" }
 ];
 
-@NgModule({
+@NgModule({ 
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
