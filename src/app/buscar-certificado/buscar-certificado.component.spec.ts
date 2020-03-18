@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PagPrincipalComponent } from './pag-principal.component';
+import { BuscarCertificadoComponent } from './buscar-certificado.component';
 
-describe('PagPrincipalComponent', () => {
-  let component: PagPrincipalComponent;
-  let fixture: ComponentFixture<PagPrincipalComponent>;
+describe('BuscarCertificadoComponent', () => {
+  let component: BuscarCertificadoComponent;
+  let fixture: ComponentFixture<BuscarCertificadoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PagPrincipalComponent ]
+      declarations: [ BuscarCertificadoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PagPrincipalComponent);
+    fixture = TestBed.createComponent(BuscarCertificadoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
