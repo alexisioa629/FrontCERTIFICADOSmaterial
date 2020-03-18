@@ -7,9 +7,10 @@ import { CertificadoComponent } from './certificado/certificado.component';
 import { BuscarCertificadoComponent } from './buscar-certificado/buscar-certificado.component';
 //imporar modulo de servicios
 import { HttpClientModule } from '@angular/common/http';
-//
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
+//servicios
+import{ServiciosService} from './servicios/servicios.service'
 @NgModule({
   declarations: [
     AppComponent,
